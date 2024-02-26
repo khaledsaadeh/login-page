@@ -1,38 +1,40 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pageContainer {
+  width: 328px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.pageContainer img {
+  height: 128px;
+  width: 128px;
+  margin-bottom: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: #0000001f !important;
+}
+.MuiFormLabel-root.Mui-focused {
+  color: #000000bc !important;
+  font-family: "Roboto", sans-serif !important;
+}
+.MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline {
+  border-color: #b00020 !important;
+  border-width: 2px !important;
+}
+.MuiFormLabel-root.Mui-error {
+  color: #b00020 !important;
+  font-family: "Roboto", sans-serif !important;
+}
+.MuiButton-root {
+  background-color: #c3001e !important;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 14px !important;
 }
